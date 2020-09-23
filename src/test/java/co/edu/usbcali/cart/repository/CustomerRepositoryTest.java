@@ -1,6 +1,6 @@
 package co.edu.usbcali.cart.repository;
 
-import co.edu.usbcali.cart.domain.Customer;
+import co.edu.usbcali.cart.entity.Customer;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
@@ -80,7 +80,7 @@ class CustomerRepositoryTest {
     void count(){
         Long count = customerRepository.count();
         assertNotEquals(count, 0);
-        log.info("Total registros: {} ", count);
+        //log.info("Total registros: {} ", count);
     }
 
     @Test
@@ -93,7 +93,7 @@ class CustomerRepositoryTest {
         });*/
 
         for (Customer customer: customerList ) {
-            log.info("email: {} ", customer.getEmail());
+            //log.info("email: {} ", customer.getEmail());
         }
 
         /* forma funcional

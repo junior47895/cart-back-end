@@ -1,7 +1,6 @@
-package co.edu.usbcali.cart.rest;
+package co.edu.usbcali.cart.api;
 
-import co.edu.usbcali.cart.domain.Customer;
-import co.edu.usbcali.cart.dto.CustomerDTO;
+import co.edu.usbcali.cart.domain.CustomerDTO;
 import co.edu.usbcali.cart.mapper.CustomerMapper;
 import co.edu.usbcali.cart.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,17 +23,17 @@ public class CustomerRest {
 
     @GetMapping("/findAll")
     public List<CustomerDTO> findAll() {
-        List<Customer> customers = customerRepository.findAll();
+        List<co.edu.usbcali.cart.entity.Customer> customers = customerRepository.findAll();
         return customerMapper.toCustomerDtos(customers);
     }
 
     @GetMapping("/findById/{email}")
     public CustomerDTO findById(@PathVariable("email") String email) {
-        Optional<Customer> customerOptional = customerRepository.findById(email);
+        Optional<co.edu.usbcali.cart.entity.Customer> customerOptional = customerRepository.findById(email);
         if (customerOptional.isPresent() == false) {
             return null;
         }
-        Customer customer = customerOptional.get();
+        co.edu.usbcali.cart.entity.Customer customer = customerOptional.get();
         return customerMapper.toCutomerDto(customer);
     }
 }

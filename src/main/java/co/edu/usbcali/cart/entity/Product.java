@@ -1,4 +1,4 @@
-package co.edu.usbcali.cart.domain;
+package co.edu.usbcali.cart.entity;
 import java.util.ArrayList;
 import java.util.List;
 
