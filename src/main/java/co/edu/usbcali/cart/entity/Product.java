@@ -1,4 +1,6 @@
 package co.edu.usbcali.cart.entity;
+import lombok.Builder;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +18,7 @@ import javax.persistence.Table;
 *
 */
 @Entity
+@Builder
 @Table(name = "product", schema = "public")
 public class Product implements java.io.Serializable {
     private static final long serialVersionUID = 1L;
