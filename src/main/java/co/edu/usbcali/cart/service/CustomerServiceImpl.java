@@ -1,8 +1,7 @@
-package co.edu.usbcali.cart.services.impl;
+package co.edu.usbcali.cart.service;
 
-import co.edu.usbcali.cart.entity.Customer;
+import co.edu.usbcali.cart.domain.Customer;
 import co.edu.usbcali.cart.repository.CustomerRepository;
-import co.edu.usbcali.cart.services.CustomerService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

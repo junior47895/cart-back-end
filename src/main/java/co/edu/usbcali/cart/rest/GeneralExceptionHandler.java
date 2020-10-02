@@ -1,4 +1,4 @@
-package co.edu.usbcali.cart.api;
+package co.edu.usbcali.cart.rest;
 
 import java.time.Instant;
 import java.util.Collections;

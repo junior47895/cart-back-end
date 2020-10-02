@@ -1,4 +1,4 @@
-package co.edu.usbcali.cart.services;
+package co.edu.usbcali.cart.service;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Rollback;
 
-import co.edu.usbcali.cart.entity.Customer;
+import co.edu.usbcali.cart.domain.Customer;
 
 @SpringBootTest
 @Rollback(false)

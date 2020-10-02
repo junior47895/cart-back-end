@@ -1,4 +1,4 @@
-package co.edu.usbcali.cart.entity;
+package co.edu.usbcali.cart.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

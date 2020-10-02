@@ -1,7 +1,6 @@
 package co.edu.usbcali.cart.repository;
 
-import co.edu.usbcali.cart.entity.Customer;
-import co.edu.usbcali.cart.entity.Product;
+import co.edu.usbcali.cart.domain.Product;
 import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;

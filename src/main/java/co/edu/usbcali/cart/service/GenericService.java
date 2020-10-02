@@ -1,4 +1,4 @@
-package co.edu.usbcali.cart.services;
+package co.edu.usbcali.cart.service;
 
 import java.util.List;
 import java.util.Optional;

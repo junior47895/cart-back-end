@@ -1,4 +1,4 @@
-package co.edu.usbcali.cart.entity;
+package co.edu.usbcali.cart.domain;
 
 import lombok.*;
 
