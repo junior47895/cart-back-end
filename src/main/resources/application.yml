@@ -14,9 +14,9 @@ spring:
 
 
   datasource:
-    url: "jdbc:postgresql://localhost:5432/cart"
-    username: postgres
-    password: 12345
+    url: "jdbc:postgresql://ec2-34-233-43-35.compute-1.amazonaws.com:5432/dchs8hjllv2hpg"
+    username: oootxhjxsxqdfe
+    password: c7363409310a495704137d4816f51b25c6734563c00649c844e6476caa41f288
 
     hikari:
       minimum-idle: 2
