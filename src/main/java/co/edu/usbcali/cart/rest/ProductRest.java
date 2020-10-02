@@ -16,6 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/product")
+@CrossOrigin("*")
 public class ProductRest {
 
     @Autowired
